@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hangman</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <div id="wordToDisplay"></div>
+    <label for="enterLetter">Enter a letter:</label>
+    <input type="text" id="enterLetter" maxlength="1" autofocus>
+    <button id="tryButton" onclick="checkLetter()">Try</button>
+    <div id="status">
+        <p id="livesRemaining"></p>
+    </div>
+    <h2 id="finalMessage"></h2>
+    <button id="restartButton" onclick="startGame()" style="display:none;">Play Again</button>
+    <script src="script.js"></script>
+</body>
+</html>
