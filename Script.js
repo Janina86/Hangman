@@ -27,8 +27,11 @@ function checkLetter() {
     document.getElementById("enterLetter").value = "";
 
     if (letter.length !== 1 || guessedLetters.includes(letter)) {
+        document.getElementById("finalMessage").innerText = "Invalid format.";
         return;
     }
+
+    document.getElementById("finalMessage").innerText = ""; 
 
     guessedLetters.push(letter);
     if (updateWord(letter)) {
@@ -38,7 +41,7 @@ function checkLetter() {
     } else {
         --life;
         if (life <= 0) {
-            endGame(`You LOSE!`);
+            endGame("You LOSE!");
         }
     }
 
