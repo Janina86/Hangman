@@ -26,7 +26,7 @@ function checkLetter() {
     let letter = document.getElementById("enterLetter").value.toUpperCase();
     document.getElementById("enterLetter").value = "";
 
-    if (letter.length !== 1 || guessedLetters.includes(letter)) {
+    if (guessedLetters.includes(letter)) {
         document.getElementById("finalMessage").innerText = "Invalid format.";
         return;
     }
