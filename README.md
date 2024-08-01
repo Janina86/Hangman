@@ -1,1 +1,1 @@
-# Hangman - LAST VERSION: 29/07/2024
+# Hangman - LAST VERSION: 01/08/2024
